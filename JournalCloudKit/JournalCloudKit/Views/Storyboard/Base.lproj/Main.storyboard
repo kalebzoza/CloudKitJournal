@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Journal -->
         <scene sceneID="KrT-tJ-dNL">
             <objects>
                 <tableViewController id="LGU-t4-l4p" customClass="EntryListTableViewController" customModule="JournalCloudKit" customModuleProvider="target" sceneMemberID="viewController">
@@ -50,7 +50,7 @@
                             <outlet property="delegate" destination="LGU-t4-l4p" id="uWr-Xt-FYS"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="k68-aB-3CH">
+                    <navigationItem key="navigationItem" title="Journal " id="k68-aB-3CH">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Wuh-cx-Ljn">
                             <connections>
                                 <segue destination="ave-1D-hhd" kind="show" id="vsL-dC-Y49"/>
@@ -85,7 +85,7 @@
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3x-lw-KSL">
                                 <rect key="frame" x="50" y="782" width="314" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Clear"/>
                                 <connections>
                                     <action selector="clearButtonTapped:" destination="ave-1D-hhd" eventType="touchUpInside" id="T81-DV-9xE"/>
                                 </connections>
