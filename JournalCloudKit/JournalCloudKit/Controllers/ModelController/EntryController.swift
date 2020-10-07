@@ -33,6 +33,7 @@ class EntryController {
             guard let record = record,
                   let savedEntry = Entry(ckRecord: record) else  { return completion(.failure(.couldNotUnwrap)) }
             print("Save successful")
+            self.entries.append(savedEntry)
             completion(.success(savedEntry))
         }
     }
